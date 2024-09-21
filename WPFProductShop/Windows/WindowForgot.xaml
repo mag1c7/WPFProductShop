@@ -1,0 +1,22 @@
+﻿<Window x:Class="WPFProductShop.Windows.WindowForgot"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFProductShop.Windows"
+        mc:Ignorable="d"
+    Title="Забыли пароль?"  d:DesignHeight="200" d:DesignWidth="500" MaxHeight="200" MaxWidth="500">
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="Введите вашу почту:" Margin="0,0,0,5"/>
+            <TextBox x:Name="EmailTextBox" Height="25" Margin="0,0,0,10"/>
+
+            <Button Content="Отправить код на почту" Click="Button_SendCode" Height="30" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Введите код подтверждения:" Margin="0,0,0,5"/>
+            <TextBox x:Name="CodeTextBox" Height="25" Margin="0,0,0,10"/>
+
+            <Button Content="Подтвердить код" Click="Button_ConfirmCode" Height="30"/>
+        </StackPanel>
+    </Grid>
+</Window>
